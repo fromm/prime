@@ -1,0 +1,57 @@
+//
+// grid.scss
+//
+
+// mixins
+@mixin make-grid() {
+  $min: 1;
+  $max: 12;
+  $keys: ('sm', 'md', 'lg', 'xl');
+
+  @each $key in $keys {
+    @for $width from 1 through 12 {
+      .prime-#{$key}-#{$width} {
+        float: left;
+      }
+    }
+  }
+
+  // sm (>= 568px)
+  @media screen and (min-width: 35.5em) {
+    @for $width from $min through $max {
+      .prime-sm-#{$width} {
+        width: 8.33333333% * $width;
+      }
+    }
+  }
+
+  // md (>= 768px)
+  @media screen and (min-width: 48em) {
+    @for $width from $min through $max {
+      .prime-md-#{$width} {
+        width: 8.33333333% * $width;
+      }
+    }
+  }
+
+  // lg (>= 1024px)
+  @media screen and (min-width: 64em) {
+    @for $width from $min through $max {
+      .prime-lg-#{$width} {
+        width: 8.33333333% * $width;
+      }
+    }
+  }
+
+  // xl (>= 1280px)
+  @media screen and (min-width: 80em) {
+    @for $width from $min through $max {
+      .prime-xl-#{$width} {
+        width: 8.33333333% * $width;
+      }
+    }
+  }
+}
+
+// includes
+@include make-grid;
