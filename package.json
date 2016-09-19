@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/fromm/prime/issues"
   },
-  "homepage": "https://github.com/fromm/prime#readme"
+  "homepage": "https://github.com/fromm/prime#readme",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.10.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
 }
