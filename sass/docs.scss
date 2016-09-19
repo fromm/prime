@@ -41,6 +41,11 @@ hr {
   border-bottom: 1px solid #ddd;
 }
 
+.prime-row {
+  margin-bottom: 1em;
+  @include clearfix;
+}
+
 .prime-container, .prime-container-fluid {
   margin-left: auto;
   margin-right: auto;
