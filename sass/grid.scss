@@ -6,13 +6,13 @@
 @mixin make-grid() {
   $min: 1;
   $max: 12;
-  $keys: ('sm', 'md', 'lg', 'xl');
 
-  @each $key in $keys {
-    @for $width from 1 through 12 {
-      .prime-#{$key}-#{$width} {
-        float: left;
-      }
+
+  // xs
+  @for $width from $min through $max {
+    .prime-xs-#{$width} {
+      float: left;
+      width: 8.33333333% * $width;
     }
   }
 
@@ -20,6 +20,7 @@
   @media screen and (min-width: 35.5em) {
     @for $width from $min through $max {
       .prime-sm-#{$width} {
+        float: left;
         width: 8.33333333% * $width;
       }
     }
@@ -29,6 +30,7 @@
   @media screen and (min-width: 48em) {
     @for $width from $min through $max {
       .prime-md-#{$width} {
+        float: left;
         width: 8.33333333% * $width;
       }
     }
@@ -38,6 +40,7 @@
   @media screen and (min-width: 64em) {
     @for $width from $min through $max {
       .prime-lg-#{$width} {
+        float: left;
         width: 8.33333333% * $width;
       }
     }
@@ -47,6 +50,7 @@
   @media screen and (min-width: 80em) {
     @for $width from $min through $max {
       .prime-xl-#{$width} {
+        float: left;
         width: 8.33333333% * $width;
       }
     }
