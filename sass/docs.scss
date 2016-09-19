@@ -26,8 +26,6 @@ p {
   color: #555;
 }
 
-.prime-container {
-  max-width: 970px;
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -35,7 +33,23 @@ hr {
   border: 0;
   border-bottom: 1px solid #ddd;
 }
+
+.prime-container, .prime-container-fluid {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
   @include clearfix;
+}
+
+.prime-container {
+  max-width: 970px;
+}
+
+// md (>= 768px)
+@media screen and (min-width: 48em) {
+  .prime-container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
