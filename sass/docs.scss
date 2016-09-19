@@ -1,0 +1,44 @@
+//
+// docs.scss
+//
+
+// Base styles
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+h2 {
+  margin-bottom: .18em;
+  font-size: 1.6em;
+}
+
+h3 {
+  margin-bottom: .15em;
+  font-size: 1.3em;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+p {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-size: 1em;
+  color: #555;
+}
+
+.prime-container {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  @include clearfix;
+}
