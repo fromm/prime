@@ -28,6 +28,13 @@ p {
 
 .prime-container {
   max-width: 970px;
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: 0 0;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
   margin-left: auto;
   margin-right: auto;
   @include clearfix;
